@@ -23,7 +23,7 @@ const App = () => {
 
   const searchMovies = async (title) => {
     setLoading(true);
-    setError('');
+    setError("");
     try {
       const response = await fetch(`${API_URL}&s=${title}`);
       const data = await response.json();
@@ -36,11 +36,11 @@ const App = () => {
     }
   };
 
-  useEffect(() => {
+ { useEffect(() => {
     searchMovies("Superheroes");
-  }, []);
+  }, []);}
 
-  console.log(error,'nbssjfksjdkj')
+  console.log(error, "nbssjfksjdkj");
   return (
     <div className="app">
       <h1>MovieLand</h1>
